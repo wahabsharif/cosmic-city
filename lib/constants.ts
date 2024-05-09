@@ -57,7 +57,7 @@ export const PROJECTS_LIST = [
     imageSrc: "/static/images/projects/space-portfolio.png",
     codeUrl: "https://github.com/MuchaSsak/space-portfolio",
     liveUrl: "https://muszarski.pl",
-    title: "Space Portfolio 🌌",
+    title: "Cosmic City 🌌",
     description:
       "A fully animated Next.js portfolio with the help of ThreeJS, Framer Motion, shadcn/ui and clever usage of .webm videos.",
     icons: [
