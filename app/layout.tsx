@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import emailjs from "@emailjs/browser";
 
 import "@/app/globals.css";
+import "@/app/styles.css";
 import { cn } from "@/lib/utils";
 import { EMAILJS_PUBLIC_KEY } from "@/lib/constants";
 import StarsBackground from "@/canvas/StarsBackground";

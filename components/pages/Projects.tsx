@@ -16,8 +16,8 @@ function Projects() {
       {/* Text */}
       <MotionDiv {...fadeIn(0.5)}>
         <Badge variant="outline">
-          <Sparkles className="py-1 text-[#e59cffde]" /> Building is the best
-          way to grow
+          <Sparkles className="py-1 text-[#4bbb7d]" /> Building is the best way
+          to grow
         </Badge>
       </MotionDiv>
       <h1 className="head-title pb-6">Example Projects I&apos;ve built</h1>

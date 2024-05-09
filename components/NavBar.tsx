@@ -13,7 +13,6 @@ import {
 function NavBar() {
   return (
     <nav className="backdrop-blur-md w-full fixed top-0 side-padding left-0 shadow-lg shadow-[#4cbc7c]/50 bg-[#0c3454] z-20 h-20 flex justify-between items-center">
-      {/* Avatar and name */}
       <div className="flex-[0.9_0.9_0%]">
         <Link className="flex gap-3 items-center w-fit" href="/">
           <Image

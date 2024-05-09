@@ -22,7 +22,7 @@ function Skills() {
       {/* Text */}
       <MotionDiv {...fadeIn(0.5)}>
         <Badge variant="outline">
-          <Sparkles className="py-1 text-[#e59cffde]" /> Always learning new
+          <Sparkles className="py-1 text-[#4bbb7d]" /> Always learning new
           things
         </Badge>
       </MotionDiv>

@@ -11,16 +11,16 @@ import {
 import {
   MotionDiv,
   MotionH1,
-  MotionP,
+  // MotionP,
   MotionVideo,
 } from "@/components/utils/Motion";
 import { Badge, Button } from "@/components/ui";
-import SVG from "@/components/utils/SVG";
+// import SVG from "@/components/utils/SVG";
 
 function Hero() {
   return (
     <section
-      id="hero"
+      id="#"
       className="w-full min-h-screen flex side-padding items-center justify-center relative"
     >
       {/* Black hole video */}
@@ -39,31 +39,30 @@ function Hero() {
       <div className="flex flex-col flex-1 items-start gap-5">
         <MotionDiv {...slideInFromTop(0.6)}>
           <Badge variant="outline" className="mb-2">
-            <Sparkles className="py-1 text-[#e59cffde]" /> Fullstack developer
-            portfolio
+            <Sparkles className="py-1 text-[#4bbb7d]" /> Cosmic City
           </Badge>
         </MotionDiv>
 
         <MotionH1 className="text-6xl" {...slideInFromLeft(0.5)}>
-          Hi, <span className="text-gradient font-bold">I&apos;m Matthew.</span>
+          Live In <span className="neon font-bold">Natures&apos;s Crown.</span>
         </MotionH1>
 
-        <MotionP className="text-gray-400 max-w-md" {...slideInFromLeft(0.75)}>
+        {/* <MotionP className="text-gray-400 max-w-md" {...slideInFromLeft(0.75)}>
           I&apos;m a full stack web developer specializing in React and Next.js.
           I love coding, IT, helping others and swimming! 🙂
-        </MotionP>
+        </MotionP> */}
 
-        <MotionDiv {...slideInFromLeft(1)}>
+        {/* <MotionDiv {...slideInFromLeft(1)}>
           <Link href="#skills" tabIndex={-1}>
             <Button>Learn more!</Button>
           </Link>
-        </MotionDiv>
+        </MotionDiv> */}
       </div>
 
       {/* Right side */}
-      <MotionDiv className="flex-1 max-xl:hidden" {...slideInFromRight(0.75)}>
+      {/* <MotionDiv className="flex-1 max-xl:hidden" {...slideInFromRight(0.75)}>
         <SVG src="/static/images/heroIcons.svg" />
-      </MotionDiv>
+      </MotionDiv> */}
     </section>
   );
 }

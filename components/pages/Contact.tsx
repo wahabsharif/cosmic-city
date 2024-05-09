@@ -15,7 +15,7 @@ function Contact() {
     >
       <MotionDiv {...fadeIn(0.5)}>
         <Badge variant="outline">
-          <Sparkles className="py-1 text-[#e59cffde]" />
+          <Sparkles className="py-1 text-[#4bbb7d]" />
           kontakt@muszarski.pl
         </Badge>
       </MotionDiv>
