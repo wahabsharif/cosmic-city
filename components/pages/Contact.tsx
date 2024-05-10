@@ -1,11 +1,10 @@
 import React from "react";
-import { Sparkles } from "lucide-react";
-
 import { fadeIn } from "@/lib/animations";
 import ContactIcon from "@/components/ContactIcon";
 import ContactForm from "@/components/ContactForm";
 import { MotionDiv } from "@/components/utils/Motion";
 import { Badge } from "@/components/ui";
+import CosmicIcon from "../CosmicIcon";
 
 function Contact() {
   return (
@@ -15,11 +14,11 @@ function Contact() {
     >
       <MotionDiv {...fadeIn(0.5)}>
         <Badge variant="outline">
-          <Sparkles className="py-1 text-[#4bbb7d]" />
-          kontakt@muszarski.pl
+          <CosmicIcon />
+          <span className="pl-2 text-2xl">info@cosmiccity.com</span>
         </Badge>
       </MotionDiv>
-      <h1 className="head-title pt-6">Contact me via mail</h1>
+      <h1 className="head-title pt-6">Contact us via mail</h1>
 
       <ContactIcon />
       <ContactForm />
