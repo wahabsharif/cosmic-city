@@ -103,7 +103,11 @@ function ContactForm() {
               <FormItem>
                 <FormLabel>Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="John Doe" {...field} name="user_name" />
+                  <Input
+                    placeholder="Cosmic City"
+                    {...field}
+                    name="user_name"
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -120,7 +124,7 @@ function ContactForm() {
                 <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="johndoe@mail.co"
+                    placeholder="info@cosmiccity.com"
                     {...field}
                     name="user_email"
                   />
@@ -140,7 +144,7 @@ function ContactForm() {
                 <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+                    placeholder="Enter Your Message. . . . ."
                     {...field}
                     name="message"
                   />
@@ -152,7 +156,7 @@ function ContactForm() {
 
           {/* Submit */}
           <Button
-            className="w-full"
+            className="w-full font-bold text-2xl text-[#0c3454] hover:text-[#4cbc7c]"
             type="submit"
             value="Send"
             isLoading={isSendingEmail}
