@@ -1,12 +1,12 @@
 import React from "react";
 
-import { Contact, Hero, Projects, Skills } from "@/components/pages";
+import { Contact, Hero, Projects, About } from "@/components/pages";
 
 function Home() {
   return (
     <>
       <Hero />
-      {/* <Skills /> */}
+      <About />
       {/* <Projects /> */}
       {/* <Contact /> */}
     </>

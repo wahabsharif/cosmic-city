@@ -50,9 +50,9 @@ function Footer() {
       <div className="flex items-center gap-8 text-center pb-10">
         <Link
           className="min-w-[8ch] hover:underline focus-visible:underline"
-          href="#skills"
+          href="#about"
         >
-          Skills
+          About
         </Link>
         <Link
           className="min-w-[8ch] hover:underline focus-visible:underline"

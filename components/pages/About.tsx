@@ -12,26 +12,29 @@ import {
 } from "@/components/ui";
 import { MotionDiv } from "@/components/utils/Motion";
 import SVG from "@/components/utils/SVG";
+import CosmicIcon from "../CosmicIcon";
 
-function Skills() {
+function About() {
   return (
     <section
-      id="skills"
+      id="about"
       className="w-full min-h-screen side-padding flex flex-col items-center justify-center gap-4 relative text-center"
     >
       {/* Text */}
       <MotionDiv {...fadeIn(0.5)}>
         <Badge variant="outline">
-          <Sparkles className="py-1 text-[#4bbb7d]" /> Always learning new
-          things
+          <CosmicIcon />
+          <span className="pl-2 text-2xl">About Us</span>
         </Badge>
       </MotionDiv>
-      <h1 className="head-title pt-4">Making apps with robust technologies</h1>
+      <h1 className="head-title pt-4">Explore About Us</h1>
       <p className="text-gray-400 max-w-md">
-        These are my major technology decisions to make my applications
-        performant, flexible, scalable and generally provide good UX and DX.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum hic
+        aspernatur sit eveniet numquam laudantium tenetur soluta a similique
+        atque ex, odit assumenda alias eaque, rem vitae id. Dolorum, incidunt?{" "}
       </p>
 
+      <h2 className="head-title-1 pt-4">Features and Amenities</h2>
       {/* Logos */}
       <div className="flex items-center justify-center gap-4 flex-wrap">
         {SKILLS_LIST.map((skill, i) => (
@@ -54,7 +57,7 @@ function Skills() {
       </div>
 
       {/* Background video */}
-      <video
+      {/* <video
         className="w-full h-full absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 opacity-50 object-cover"
         autoPlay
         playsInline
@@ -62,9 +65,9 @@ function Skills() {
         muted
       >
         <source src="/static/video/wormhole.webm" />
-      </video>
+      </video> */}
     </section>
   );
 }
 
-export default Skills;
+export default About;

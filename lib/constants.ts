@@ -11,28 +11,28 @@ export const EMAILJS_TEMPLATE_ID = "template_4e3jgyp";
 
 export const SKILLS_LIST = [
   {
-    path: "/static/images/logos/nextjs.svg",
-    skillName: "Next.js",
+    path: "/static/images/logos/electricity.svg",
+    skillName: "Electricity",
   },
   {
-    path: "/static/images/logos/typescript.svg",
-    skillName: "TypeScript",
+    path: "/static/images/logos/hospitals.svg",
+    skillName: "Hospitals",
   },
   {
-    path: "/static/images/logos/react.svg",
-    skillName: "React",
+    path: "/static/images/logos/parks.svg",
+    skillName: "Parks",
   },
   {
-    path: "/static/images/logos/tailwindcss.svg",
-    skillName: "TailwindCSS",
+    path: "/static/images/logos/playgrounds.svg",
+    skillName: "PlayGrounds",
   },
   {
-    path: "/static/images/logos/react-query.svg",
-    skillName: "Tanstack Query",
+    path: "/static/images/logos/schools.svg",
+    skillName: "Schools",
   },
   {
-    path: "/static/images/logos/supabase.svg",
-    skillName: "Supabase",
+    path: "/static/images/logos/security.svg",
+    skillName: "24/7 Security",
   },
 ];
 

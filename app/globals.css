@@ -50,13 +50,13 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  .bg-custom-selection {
+    background: color-mix(in_srgb, #4cbc7c 20%, transparent);
   }
+}
 
-  ::selection {
-    @apply bg-[color-mix(in_srgb,20%_purple,transparent)];
-  }
+::selection {
+  @apply bg-custom-selection;
 }
 
 ::-webkit-scrollbar {
@@ -69,18 +69,16 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(147 51 234);
+  background: rgb(76, 188, 124);
   box-shadow: inset 0 0 0.3125rem rgba(255, 255, 255, 0.6);
   border-radius: 500rem;
 }
 
 .text-dimmed-gradient {
-  background: linear-gradient(
-      0deg,
+  background: linear-gradient(0deg,
       hsla(0, 0%, 100%, 0.4),
-      hsla(0, 0%, 100%, 0.4)
-    ),
-    linear-gradient(90deg, #e59cff 0%, #ba9cff 50%, #9cb2ff);
+      hsla(0, 0%, 100%, 0.4)),
+    linear-gradient(90deg, #4cbc7c 0%, #509c68 50%, #0c5868);
   background-blend-mode: normal, screen;
   -webkit-background-clip: text;
   background-clip: text;
@@ -97,4 +95,8 @@
 
 .head-title {
   @apply text-4xl font-bold text-balance text-center;
+}
+
+.head-title-1 {
+  @apply text-3xl font-bold text-balance text-center;
 }

@@ -15,6 +15,7 @@ import {
   MotionVideo,
 } from "@/components/utils/Motion";
 import { Badge, Button } from "@/components/ui";
+import CosmicIcon from "../CosmicIcon";
 // import SVG from "@/components/utils/SVG";
 
 function Hero() {
@@ -39,7 +40,8 @@ function Hero() {
       <div className="flex flex-col flex-1 items-start gap-5">
         <MotionDiv {...slideInFromTop(0.6)}>
           <Badge variant="outline" className="mb-2">
-            <Sparkles className="py-1 text-[#4bbb7d]" /> Cosmic City
+            <CosmicIcon />
+            <span className="pl-2 text-2xl">Cosmic City</span>
           </Badge>
         </MotionDiv>
 

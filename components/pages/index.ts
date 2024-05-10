@@ -1,6 +1,6 @@
 import Hero from "@/components/pages/Hero";
-import Skills from "@/components/pages/Skills";
+import About from "@/components/pages/About";
 import Projects from "@/components/pages/Projects";
 import Contact from "@/components/pages/Contact";
 
-export { Hero, Skills, Projects, Contact };
+export { Hero, About, Projects, Contact };
