@@ -1,13 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import { Sparkles } from "lucide-react";
-
-import {
-  fadeIn,
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/lib/animations";
+import { fadeIn, slideInFromLeft, slideInFromTop } from "@/lib/animations";
 import {
   MotionDiv,
   MotionH1,

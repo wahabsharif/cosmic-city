@@ -1,13 +1,13 @@
 import React from "react";
 
-import { Contact, Hero, Projects, About } from "@/components/pages";
+import { Contact, Hero, PaymentPlan, About } from "@/components/pages";
 
 function Home() {
   return (
     <>
       <Hero />
       <About />
-      {/* <Projects /> */}
+      <PaymentPlan />
       {/* <Contact /> */}
     </>
   );
