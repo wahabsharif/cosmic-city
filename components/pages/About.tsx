@@ -43,13 +43,13 @@ function About() {
               <TooltipTrigger className="cursor-default">
                 <MotionDiv {...slideInFromBottom(i / 10)}>
                   <SVG
-                    className="w-28 h-28 relative [&_svg]:absolute [&_svg]:h-20 [&_svg]:w-20 [&_svg]:left-1/2 [&_svg]:top-1/2 [&_svg]:-translate-x-1/2 [&_svg]:-translate-y-1/2 hover:-translate-y-4 transition-transform duration-300"
+                    className="mt-10 w-28 h-28 relative [&_svg]:absolute [&_svg]:h-20 [&_svg]:w-20 [&_svg]:left-1/2 [&_svg]:top-1/2 [&_svg]:-translate-x-1/2 [&_svg]:-translate-y-1/2 hover:-translate-y-4 transition-transform duration-300"
                     src={skill.path}
                   />
                 </MotionDiv>
               </TooltipTrigger>
               <TooltipContent sideOffset={8}>
-                <p>{skill.skillName}</p>
+                <p className="mb-1 text-gray-400">{skill.skillName}</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
