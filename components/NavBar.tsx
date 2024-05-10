@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 
 import {
@@ -25,24 +25,30 @@ function NavBar() {
       </div>
 
       {/* Page links */}
-      <div className="flex items-center gap-2 flex-1 max-xl:hidden bg-black/40 px-10 rounded-full justify-between border border-solid border-black/20">
+      <div className="flex text-center -ml-2 items-center gap-1 flex-1 max-xl:hidden bg-black/40  rounded-full justify-between border border-solid border-black/20">
         <Link
-          className="hover:tracking-wider focus-visible:tracking-wider transition-all px-10 py-2 min-w-[22ch]"
+          className="hover:tracking-wider focus-visible:tracking-wider transition-all  py-2 min-w-[17ch]"
           href="#about"
         >
           About Us
         </Link>
         <Link
-          className="hover:tracking-wider focus-visible:tracking-wider transition-all px-10 py-2 min-w-[22ch]"
+          className="hover:tracking-wider focus-visible:tracking-wider transition-all  py-2 min-w-[17ch]"
           href="#proximity"
         >
           Proximity
         </Link>
         <Link
-          className="hover:tracking-wider focus-visible:tracking-wider transition-all px-10 py-2 min-w-[22ch]"
+          className="hover:tracking-wider focus-visible:tracking-wider transition-all  py-2 min-w-[17ch]"
           href="#payment"
         >
           Payment Plan
+        </Link>
+        <Link
+          className="hover:tracking-wider focus-visible:tracking-wider transition-all  py-2 min-w-[17ch]"
+          href="#contact"
+        >
+          Contact
         </Link>
       </div>
 
@@ -65,14 +71,28 @@ function NavBar() {
         <Link href="#" tabIndex={-1}>
           <button
             type="button"
-            className="focus:outline-none text-bold text-white bg-[#4cbc7c] hover:bg-[#0c3454] focus:ring-4 focus:ring-green-300 font-extrabold rounded-lg text-sm px-5 py-2.5 me-2 mb-2 transition-all duration-300 ease-in-out"
+            className="focus:outline-none text-bold text-white bg-[#4cbc7c] hover:bg-[#0c3454] focus:ring-4 focus:ring-green-300 font-bold rounded-lg text-sm px-5 py-2.5 me-2 ml-2 mb-2 transition-all duration-300 ease-in-out"
           >
             Book Now
           </button>
         </Link>
         <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
+          <Facebook
+            className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
+            strokeWidth={1.5}
+            tabIndex={0}
+          />
+        </Link>
+        <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
+          <Instagram
+            className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
+            strokeWidth={1.5}
+            tabIndex={0}
+          />
+        </Link>
+        <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
           <Mail
-            className="hover:fill-white hover:stroke-black focus-visible:stroke-black focus-visible:fill-white"
+            className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
             strokeWidth={1.5}
             tabIndex={0}
           />
