@@ -1,6 +1,4 @@
 import React from "react";
-import { Sparkles } from "lucide-react";
-
 import { SKILLS_LIST } from "@/lib/constants";
 import { fadeIn, slideInFromBottom } from "@/lib/animations";
 import {

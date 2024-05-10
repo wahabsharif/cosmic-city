@@ -71,32 +71,34 @@ function NavBar() {
         <Link href="#" tabIndex={-1}>
           <button
             type="button"
-            className="focus:outline-none text-bold text-white bg-[#4cbc7c] hover:bg-[#0c3454] focus:ring-4 focus:ring-green-300 font-bold rounded-lg text-sm px-5 py-2.5 me-2 ml-2 mb-2 transition-all duration-300 ease-in-out"
+            className="focus:outline-none text-bold text-white bg-[#4cbc7c] hover:bg-[#0c3454] focus:ring-4 focus:ring-green-300 font-bold rounded-lg text-sm px-5 py-2.5 me-2 ml-2 mb-2 transition-all duration-300 ease-in-out sm:text-base sm:px-3 sm:py-3 sm:me-3 sm:ml-1 sm:mb-3"
           >
             Book Now
           </button>
         </Link>
-        <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
-          <Facebook
-            className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
-            strokeWidth={1.5}
-            tabIndex={0}
-          />
-        </Link>
-        <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
-          <Instagram
-            className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
-            strokeWidth={1.5}
-            tabIndex={0}
-          />
-        </Link>
-        <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
-          <Mail
-            className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
-            strokeWidth={1.5}
-            tabIndex={0}
-          />
-        </Link>
+        <div className="hidden md:flex gap-4">
+          <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
+            <Facebook
+              className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
+              strokeWidth={1.5}
+              tabIndex={0}
+            />
+          </Link>
+          <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
+            <Instagram
+              className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
+              strokeWidth={1.5}
+              tabIndex={0}
+            />
+          </Link>
+          <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
+            <Mail
+              className="hover:fill-white hover:stroke-[#4cbc7c] focus-visible:stroke-[#4cbc7c] focus-visible:fill-white"
+              strokeWidth={1.5}
+              tabIndex={0}
+            />
+          </Link>
+        </div>
       </div>
     </nav>
   );
