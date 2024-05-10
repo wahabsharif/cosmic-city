@@ -1,6 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import {
+  Facebook,
+  Github,
+  Instagram,
+  Linkedin,
+  Mail,
+  Twitter,
+} from "lucide-react";
 
 import {
   CONTACT_EMAIL,
@@ -10,6 +17,11 @@ import {
 import { Button } from "@/components/ui";
 
 function Footer() {
+  // Function to get the current year
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  };
+
   return (
     <footer
       id="footer"
@@ -23,10 +35,19 @@ function Footer() {
             variant="secondary"
             size="icon"
           >
-            <Github strokeWidth={1.5} />
+            <Facebook strokeWidth={1.5} />
           </Button>
         </Link>
         <Link href={LINKEDIN_PROFILE_URL} target="_blank" tabIndex={-1}>
+          <Button
+            className="rounded-full p-2.5"
+            variant="secondary"
+            size="icon"
+          >
+            <Instagram strokeWidth={1.5} />
+          </Button>
+        </Link>
+        <Link href={`mailto:${CONTACT_EMAIL}`} target="_blank" tabIndex={-1}>
           <Button
             className="rounded-full p-2.5"
             variant="secondary"
@@ -41,7 +62,7 @@ function Footer() {
             variant="secondary"
             size="icon"
           >
-            <Mail strokeWidth={1.5} />
+            <Twitter strokeWidth={1.5} />
           </Button>
         </Link>
       </div>
@@ -56,28 +77,36 @@ function Footer() {
         </Link>
         <Link
           className="min-w-[8ch] hover:underline focus-visible:underline"
-          href="#projects"
+          href="#proximity"
         >
-          Projects
+          Proximity
+        </Link>
+        <Link
+          className="min-w-[8ch] hover:underline focus-visible:underline"
+          href="#payment"
+        >
+          Payment Plan
         </Link>
         <Link
           className="min-w-[8ch] hover:underline focus-visible:underline"
           href="#contact"
         >
-          Contact
+          Contact Us
         </Link>
       </div>
 
       {/* Copyright */}
       <div className="bg-black absolute left-0 bottom-0 w-full py-3 side-padding text-center">
         <h6 className="text-sm text-gray-400">
-          Copyright &copy;2024 | Inspired by{" "}
+          Copyright &copy; {getCurrentYear()} Cosmic City | Designed And
+          Developed by
           <Link
-            href="https://github.com/Mif2006/Space-Portolio"
+            href="http://beacontechh.com/"
             className="text-gray-500 hover:underline focus-visible:underline"
             target="_blank"
           >
-            @Mif2006
+            {" "}
+            Beacon Techh{" "}
           </Link>
         </h6>
       </div>

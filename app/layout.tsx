@@ -9,7 +9,7 @@ import { EMAILJS_PUBLIC_KEY } from "@/lib/constants";
 import StarsBackground from "@/canvas/StarsBackground";
 import { Toaster } from "@/components/ui/sonner";
 import NavBar from "@/components/NavBar";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -62,7 +62,7 @@ export default function RootLayout({
 
         {children}
 
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

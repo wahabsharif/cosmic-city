@@ -8,7 +8,7 @@ function Home() {
       <Hero />
       <About />
       <PaymentPlan />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 }
